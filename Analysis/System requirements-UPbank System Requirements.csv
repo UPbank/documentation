@@ -1,0 +1,68 @@
+﻿ID,Description,Attachment,Use cases
+1,"The system shall allow the creation of accounts, using the attached data provided by the user.","1. Email
+2. Password
+3. Full name
+4. Birthday
+5. Address
+6. Tax number
+7. ID number",1
+1.1,"When creating an account, the system shall ensure the user is at least 18 years old.",,1
+1.2,"When creating an account, the system shall ensure the given email isn't already in use.",,1
+1.3,"When creating an account, the system shall store the account creation date and time.",,1
+1.4,"When creating an account, the system shall automatically create two debit cards, called ""Physical Card"" and ""Virtual Card"".",,1
+1.4.1,"When creating an account and its' respective cards, the cards should be valid for two years counting from their creation.",,1
+2,"The system shall be able to convert an account ID into the respective IBAN, using Banco de Portugal's specifications attached.",https://www.bportugal.pt/sites/default/files/anexos/documentos-relacionados/international_bank_account_number_vfinal_dpg_vr_20180226.pdf,9.1
+2.1,"The system shall use ""00972890"" as the first digits of internal BBANs.",,9.1
+3,The system shall be able to convert a card ID into the respective number.,,8
+3.1,"The system shall use ""436339"" as the first digits of all cards.",,8
+3.2,"The system shall use Luhn's formula to generate all cards' checksum, according to ISO/IEC 7812-1:2017.",,8
+3.3,The system shall ensure all card numbers have exactly 16 digits.,,8
+4,"When closing an account, if the account's balance isn't 0, the system shall request an IBAN and transfer the remaining funds to the account that IBAN belongs to.",,2
+5,"The system shall allow filtering transactions by starting month, ending month, type (expense/income) and sender/receiver.",,4
+5.1,The system shall ensure the starting month is less than or equal to the ending month.,,4
+6,"The system shall process service payments, with an entity, reference and amount provided by the user.",,5.2
+6.1,The system shall ensure service entities have exactly 5 digits.,,5.2
+6.2,The system shall ensure service references have exactly 9 digits.,,5.2
+7,"The system shall process government payments, with a reference and amount provided by the user.",,5.3
+7.1,The system shall ensure government references have exactly 15 digits.,,5.3
+8,"The system shall process telco payments, with a provider, amount and phone number given by the user.",,5.4
+8.1,The system shall ensure telco providers are in the attached data.,"- Lycamobile GT Mobile
+- MEO
+- MEO Card
+- MEO Card - PT Hello / PT Card
+- MEO Card - Telefone Hello
+- MEO Escola Digital
+- Moche
+- NOS
+- NOS - Escola Digital
+- SAPO
+- Sapo ADSL
+- UZO
+- Via Card
+- Vodafone
+- WTF",5.4
+8.2,The system shall ensure telco phone numbers have exactly 9 digits.,,5.4
+8.3,"The system shall ensure telco phone numbers start with 91, 92, 93 or 96.",,5.4
+9,"The system shall process bank transfers, with an IBAN, amount and optional note given by the user.",,5.1
+9.1,"If the IBAN in a bank transfer belongs to one of the bank's accounts, the system shall process the payment immediately, by creating the respective income transaction in the recepient's account.",,5.1
+9.2,"If the IBAN in a bank transfer belongs to an account outside the bank, the system shall use the respective external API to process the payment.",,5.1
+10,"The system shall allow scheduling transfers, given an IBAN, date, amount and frequency.",,6.1
+10.1,"The system shall allow the following values for scheduled transfers' frequency: Daily, weekly, monthly, yearly, applying the rules attached.","The system shall process all repeating transfers at midnight.
+If a transfer is repeated weekly, the system shall process the transfers exactly 7 days apart, on the same week day.
+If a transfer is repeated monthly, the system shall process the transfers on the same day of the month. If the day doesn't exist in a given month, the last day of the month shall be used instead.
+If a transfer is repeated yearly, the system shall process transfers on the exact same day, If the given day is the 29th of February and a given year isn't a leap year, the payment shall be processed on the 28th of February that year.",6.1
+11,The system shall generate monthly account statements.,,9.2
+12,The system shall ensure all provided dates and datetimes are in conformity with the ISO 8601 standard.,,"1,6.1,6.2,9.2,10"
+13,The system shall ensure all provided addresses are in conformity with the attached format.,"'- Address line 1
+- Address line 2 (optional)
+- Postal code (####-###)
+- City
+- District","1,10"
+14,"The system shall ensure all provided tax numbers are in conformity with article 1 of ""Decreto-Lei n.º 14/2013, de 28 de janeiro"".",https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Decreto-Lei_14-2013.pdf,"1,10"
+14.1,The system shall use the procedure in 2.3.2 of the attached file to compute/verify the control number.,https://repositorio-aberto.up.pt/bitstream/10216/105401/2/200569.pdf,"1,10"
+15,The system shall prevent any transaction from being made in case it would result in the account's balance being below 0.,,"5,5.1,5.2,5.3,5.4,6.1,6.2"
+17,"For all transfers initiated by the user, the system shall ensure the amount is positive.",,"5,5.1,5.2,5.3,5.4,6.1,6.2"
+18,The system shall use euros (€) for all currency and balance expressions.,,"3,4,5,5.1,5.2,5.3,5.4,6,6.1,6.2,6.3,9.2,4.2"
+19,The system shall ensure all given IBANs conform to the ISO 13616 standard.,,"5.1,9.1"
+20,The system shall ensure all given PINs have exactly 4 digits.,,8.3
+21,"The system shall ensure all user inserted strings do not exceed 80 characters, except where otherwise noted.",,"1,4.1,5.1,10"

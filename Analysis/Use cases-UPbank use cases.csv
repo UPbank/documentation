@@ -1,0 +1,26 @@
+﻿ID,Description,Relevant requirements
+1,Create an account,"1,1.1,1.2,1.3,1.4,1.4.1,12,13,14,14.1,21"
+2,Close an account,4
+3,View account balance,18
+4,View transactions,"5,5.1,18"
+4.1,Change transaction's notes,21
+4.2,Get a proof of transaction,18
+5,Transfer money,"15,17,18"
+5.1,Make a bank transfer,"9,9.1,9.2,15,17,18,19,21"
+5.2,Make a service payment,"6,6.1,6.2,15,17,18"
+5.3,Make a government payment,"7,7.1,15,17,18"
+5.4,Make a telco payment,"8,8.1,8.2,8.3,15,17,18"
+6,View scheduled transfers,18
+6.1,Schedule a transfer,"10,10.1,12,15,17,18"
+6.2,Change a scheduled transfer,"12,15,17,18"
+6.3,Delete a scheduled transfer,18
+7,View direct debits,
+7.1,Toggle a direct debit,
+8,View cards,"3,3.1,3.2,3.3"
+8.1,Toggle online payments,
+8.2,Toggle NFC payments,
+8.3,Change PIN,20
+9,Get documents,
+9.1,Get IBAN proof,"2,2.1,19"
+9.2,Get account statements,"11,12,18"
+10,Change account information,"12,13,14,14.1,21"
