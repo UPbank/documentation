@@ -1,0 +1,33 @@
+_id: req_wrk_9499a39dcd164ee5a2c3a41f1e25d838202280c5
+type: Request
+parentId: wrk_9499a39dcd164ee5a2c3a41f1e25d838
+modified: 1663340490334
+created: 1663340490334
+url: "{{ base_url }}/api/transfers/telcoPayments"
+name: /api/transfers/telcoPayments
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+      "provider": 0,
+      "phoneNumber": 0,
+      "amount": 0
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  token: "{{bearerToken}}"
+  prefix: ""
+metaSortKey: -1663340490334
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

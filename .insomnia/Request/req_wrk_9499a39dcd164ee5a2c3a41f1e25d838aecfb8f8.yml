@@ -1,0 +1,33 @@
+_id: req_wrk_9499a39dcd164ee5a2c3a41f1e25d838aecfb8f8
+type: Request
+parentId: wrk_9499a39dcd164ee5a2c3a41f1e25d838
+modified: 1663340490330
+created: 1663340490330
+url: "{{ base_url }}/api/standingOrders"
+name: /api/standingOrders
+description: ""
+method: GET
+body: {}
+parameters:
+  - name: page
+    disabled: true
+    value: "0"
+  - name: size
+    disabled: true
+    value: "0"
+  - name: sort
+    disabled: true
+    value: string
+headers: []
+authentication:
+  type: bearer
+  token: "{{bearerToken}}"
+  prefix: ""
+metaSortKey: -1663340490330
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

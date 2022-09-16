@@ -1,0 +1,32 @@
+_id: req_wrk_9499a39dcd164ee5a2c3a41f1e25d83886f7c308
+type: Request
+parentId: wrk_9499a39dcd164ee5a2c3a41f1e25d838
+modified: 1663340490349
+created: 1663340490349
+url: "{{ base_url }}/api/transfers/{{ id }}"
+name: /api/transfers/{id}
+description: ""
+method: PUT
+body:
+  mimeType: application/json
+  text: |-
+    {
+      "notes": "string",
+      "image": "string"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  token: "{{bearerToken}}"
+  prefix: ""
+metaSortKey: -1663340490349
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,24 @@
+_id: req_wrk_9499a39dcd164ee5a2c3a41f1e25d838fa7efa7d
+type: Request
+parentId: wrk_9499a39dcd164ee5a2c3a41f1e25d838
+modified: 1663340500292
+created: 1663340490356
+url: "{{ base_url }}/api/accounts/"
+name: /api/accounts/
+description: ""
+method: DELETE
+body: {}
+parameters: []
+headers: []
+authentication:
+  type: bearer
+  token: "{{bearerToken}}"
+  prefix: ""
+metaSortKey: -1663340490356
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,33 @@
+_id: req_wrk_9499a39dcd164ee5a2c3a41f1e25d838ad0ea8e1
+type: Request
+parentId: wrk_9499a39dcd164ee5a2c3a41f1e25d838
+modified: 1663340490343
+created: 1663340490343
+url: "{{ base_url }}/api/transfers/servicePayments"
+name: /api/transfers/servicePayments
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+      "entity": 0,
+      "reference": 0,
+      "amount": 0
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  token: "{{bearerToken}}"
+  prefix: ""
+metaSortKey: -1663340490343
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
