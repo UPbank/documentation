@@ -1,0 +1,34 @@
+_id: req_wrk_9499a39dcd164ee5a2c3a41f1e25d8385b9b97d3
+type: Request
+parentId: wrk_9499a39dcd164ee5a2c3a41f1e25d838
+modified: 1663340502953
+created: 1663340490345
+url: "{{ base_url }}/api/transfers/bankTransfers"
+name: /api/transfers/bankTransfers
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+      "amount": 0,
+      "note": "string",
+      "iban": "string"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_6ee7060e5f004240a1bc3cce3f06c6dd
+authentication:
+  type: bearer
+  token: "{{bearerToken}}"
+  prefix: ""
+metaSortKey: -1663340490345
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

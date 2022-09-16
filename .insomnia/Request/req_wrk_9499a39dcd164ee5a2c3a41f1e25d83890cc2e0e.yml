@@ -1,0 +1,52 @@
+_id: req_wrk_9499a39dcd164ee5a2c3a41f1e25d83890cc2e0e
+type: Request
+parentId: wrk_9499a39dcd164ee5a2c3a41f1e25d838
+modified: 1663340500666
+created: 1663340490351
+url: "{{ base_url }}/api/transfers"
+name: /api/transfers
+description: ""
+method: GET
+body: {}
+parameters:
+  - name: page
+    disabled: true
+    value: "0"
+    id: pair_f5b4eed7cb96489ab442a4c30d9469f3
+  - name: size
+    disabled: true
+    value: "0"
+    id: pair_a5fb3786c8174b298f86023e3d7458db
+  - name: sort
+    disabled: true
+    value: string
+    id: pair_c123b354d05b4fb9851d751771c0af42
+  - name: minDate
+    disabled: true
+    value: string
+    id: pair_112e494fe029492aa850ec6037547774
+  - name: maxDate
+    disabled: true
+    value: string
+    id: pair_6d870f8764fc433a9328c7ff05442aa8
+  - name: type
+    disabled: true
+    value: string
+    id: pair_b8987f8490d54134b20ce2f74fa43b57
+  - name: fromTo
+    disabled: true
+    value: "0"
+    id: pair_9d347728916640ccb17b1922d9daebba
+headers: []
+authentication:
+  type: bearer
+  token: "{{bearerToken}}"
+  prefix: ""
+metaSortKey: -1663340490351
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

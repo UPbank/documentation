@@ -1,0 +1,34 @@
+_id: req_wrk_9499a39dcd164ee5a2c3a41f1e25d8382b94069e
+type: Request
+parentId: wrk_9499a39dcd164ee5a2c3a41f1e25d838
+modified: 1663340490328
+created: 1663340490328
+url: "{{ base_url }}/api/standingOrders"
+name: /api/standingOrders
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+      "id": 0,
+      "amount": 0,
+      "frequency": "string",
+      "receiverIban": "string"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  token: "{{bearerToken}}"
+  prefix: ""
+metaSortKey: -1663340490329
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
