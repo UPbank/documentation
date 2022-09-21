@@ -1,12 +1,12 @@
 _id: req_wrk_9499a39dcd164ee5a2c3a41f1e25d83890cc2e0e
 type: Request
 parentId: wrk_9499a39dcd164ee5a2c3a41f1e25d838
-modified: 1663340500666
+modified: 1663689228078
 created: 1663340490351
 url: "{{ base_url }}/api/transfers"
 name: /api/transfers
 description: ""
-method: GET
+method: POST
 body: {}
 parameters:
   - name: page
@@ -42,7 +42,7 @@ authentication:
   type: bearer
   token: "{{bearerToken}}"
   prefix: ""
-metaSortKey: -1663340490351
+metaSortKey: 600
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true

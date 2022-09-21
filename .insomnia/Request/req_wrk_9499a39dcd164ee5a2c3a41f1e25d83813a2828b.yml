@@ -1,7 +1,7 @@
 _id: req_wrk_9499a39dcd164ee5a2c3a41f1e25d83813a2828b
 type: Request
 parentId: wrk_9499a39dcd164ee5a2c3a41f1e25d838
-modified: 1663340497758
+modified: 1663748806671
 created: 1663340490363
 url: "{{ base_url }}/register"
 name: /register
@@ -10,7 +10,7 @@ method: POST
 body:
   mimeType: application/json
   text: |-
-    {
+    	{
       "email": "string",
       "password": "string",
       "fullName": "string",
@@ -30,8 +30,17 @@ headers:
   - name: Content-Type
     value: application/json
     id: pair_08e3219989334ecca4e2508016a4e04b
-authentication: {}
-metaSortKey: -1663340490363
+  - id: pair_091135aa20564073ba532012a5fc1759
+    name: ""
+    value: ""
+    description: ""
+  - id: pair_68200d8636b34712b58e8c93cb1dca24
+    name: ""
+    value: ""
+    description: ""
+authentication:
+  type: bearer
+metaSortKey: 1200
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true

@@ -1,7 +1,7 @@
 _id: req_wrk_9499a39dcd164ee5a2c3a41f1e25d8382b94069e
 type: Request
 parentId: wrk_9499a39dcd164ee5a2c3a41f1e25d838
-modified: 1663340490328
+modified: 1663689228078
 created: 1663340490328
 url: "{{ base_url }}/api/standingOrders"
 name: /api/standingOrders
@@ -24,7 +24,7 @@ authentication:
   type: bearer
   token: "{{bearerToken}}"
   prefix: ""
-metaSortKey: -1663340490329
+metaSortKey: 500
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true

@@ -1,7 +1,7 @@
 _id: req_wrk_9499a39dcd164ee5a2c3a41f1e25d838ec7ae9b5
 type: Request
 parentId: wrk_9499a39dcd164ee5a2c3a41f1e25d838
-modified: 1663340499185
+modified: 1663749023403
 created: 1663340490362
 url: "{{ base_url }}/authenticate"
 name: /authenticate
@@ -11,7 +11,7 @@ body:
   mimeType: application/json
   text: |-
     {
-      "email": "string",
+      "email":"name66665555" ,
       "password": "string"
     }
 parameters: []
@@ -20,7 +20,7 @@ headers:
     value: application/json
     id: pair_6f3af6a14d8a4fa0b30d5a81c7e5b383
 authentication: {}
-metaSortKey: -1663340490362
+metaSortKey: 1100
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true

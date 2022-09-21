@@ -1,7 +1,7 @@
 _id: req_wrk_9499a39dcd164ee5a2c3a41f1e25d83865b0622a
 type: Request
 parentId: wrk_9499a39dcd164ee5a2c3a41f1e25d838
-modified: 1663340490308
+modified: 1663689228078
 created: 1663340490308
 url: "{{ base_url }}/api/cards/{{ id }}"
 name: /api/cards/{id}
@@ -24,7 +24,7 @@ authentication:
   type: bearer
   token: "{{bearerToken}}"
   prefix: ""
-metaSortKey: -1663340490308
+metaSortKey: 1300
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true

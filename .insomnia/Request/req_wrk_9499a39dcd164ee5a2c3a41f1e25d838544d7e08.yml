@@ -1,20 +1,25 @@
 _id: req_wrk_9499a39dcd164ee5a2c3a41f1e25d838544d7e08
 type: Request
 parentId: wrk_9499a39dcd164ee5a2c3a41f1e25d838
-modified: 1663340499753
+modified: 1663696377097
 created: 1663340490360
 url: "{{ base_url }}/api/accounts/"
 name: /api/accounts/
 description: ""
 method: GET
-body: {}
+body:
+  mimeType: application/json
+  text: ""
 parameters: []
-headers: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_e31571a94dad46ccba288c6676ccad53
 authentication:
   type: bearer
   token: "{{bearerToken}}"
   prefix: ""
-metaSortKey: -1663340490360
+metaSortKey: 0
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true
