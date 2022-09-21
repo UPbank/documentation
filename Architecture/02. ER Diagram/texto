@@ -1,0 +1,82 @@
+Table Account {
+  id long [pk]
+  fullName varchar
+  birthdate date
+  addressId long [ref: < Address.id]
+  email varchar [unique]
+  taxNumber varchar
+  idNumber int
+  createdAt datetime
+  balance long
+  updatedAt datetime
+}
+
+Table Address {
+  id long [pk]
+  line1 varchar
+  line2 varchar
+  postalCode varchar
+  city varchar
+  district varchar
+  updatedAt datetime
+}
+
+Table Transfers {
+  id long [pk]
+  date datetime
+  senderId long [ref: > Account.id] 
+  receiverId long [ref: > Account.id]
+  amount long
+  metadata json
+  notes varchar
+  image Image
+  updatedAt datetime
+}
+
+Table Cards {
+  id long [pk]
+  name varchar
+  expiryDate date
+  pinCode int
+  onlinePayments boolean
+  nfcPayments boolean
+  accountId long [ref: > Account.id]
+  createdAt datetime
+}
+// Table SavingsAccount { 
+// openSavings varchar
+// closeSavings varchar
+// balance double
+// }
+
+Table DirectDebit {
+  id long  [pk]
+  active boolean
+  amount long
+  date date
+  receiverId long [ref: > Account.id]
+  senderId long [ref: > Account.id]
+  lastDebitId long [ref: > Transfers.id]
+  updatedAt datetime
+}
+Table StandingOrder {
+ id long [pk]
+ date date
+ receiverId long
+ amount long
+ frequency enum
+ senderId long [ref: > Account.id]
+ updatedAt datetime
+}
+Table TelcoProviders {
+  id long [pk,ref: > Transfers.receiverId]
+  name varchar
+  updatedAt datetime
+}
+
+
+
+Ref: "StandingOrder"."receiverId" < "TelcoProviders"."id"
+
+Ref: "TelcoProviders"."id" < "DirectDebit"."receiverId"
+
