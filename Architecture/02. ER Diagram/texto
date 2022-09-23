@@ -1,0 +1,63 @@
+Table Account {
+  id long [pk]
+  fullName varchar
+  birthdate date
+  addressId long [ref: - Address.id]
+  email varchar [unique]
+  taxNumber varchar
+  idNumber int
+  createdAt datetime
+  balance long
+}
+
+Table Address {
+  id long [pk]
+  line1 varchar
+  line2 varchar
+  postalCode varchar
+  city varchar
+  district varchar
+}
+
+Table Transfers {
+  id long [pk]
+  date datetime
+  senderId long [ref: > Account.id] 
+  receiverId long [ref: > Account.id]
+  amount long
+  metadata json
+  notes varchar
+  image Image
+}
+
+Table Cards {
+  id long [pk]
+  name varchar
+  expiryDate date
+  pinCode int
+  onlinePayments boolean
+  nfcPayments boolean
+  accountId long [ref: > Account.id]
+}
+
+Table DirectDebit {
+  id long  [pk]
+  active boolean
+  amount long
+  date date
+  receiverId long [ref: > Account.id]
+  senderId long [ref: > Account.id]
+  lastDebitId long [ref: > Transfers.id]
+}
+Table StandingOrder {
+ id long [pk]
+ date date
+ receiverId long [ref: > Account.id]
+ amount long
+ frequency enum
+ senderId long [ref: > Account.id]
+}
+Table TelcoProviders {
+  id long [pk]
+  name varchar
+}
