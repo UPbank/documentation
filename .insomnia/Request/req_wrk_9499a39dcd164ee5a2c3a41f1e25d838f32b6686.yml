@@ -1,10 +1,10 @@
 _id: req_wrk_9499a39dcd164ee5a2c3a41f1e25d838f32b6686
 type: Request
 parentId: wrk_9499a39dcd164ee5a2c3a41f1e25d838
-modified: 1663689228078
+modified: 1664180557703
 created: 1663340490313
-url: "{{ base_url }}/api/cards"
-name: /api/cards
+url: localhost:8080/api/cards
+name: /api/cards Get cards from user
 description: ""
 method: GET
 body: {}
@@ -12,12 +12,15 @@ parameters:
   - name: page
     disabled: true
     value: "0"
+    id: pair_8cbcc07167aa45958da9bc2de2f292de
   - name: size
     disabled: true
     value: "0"
+    id: pair_84404e215d7b49d197ae4ad4665c8e6e
   - name: sort
     disabled: true
     value: string
+    id: pair_d5f5c4062b8c421c97605ce6cb8811b3
 headers: []
 authentication:
   type: bearer

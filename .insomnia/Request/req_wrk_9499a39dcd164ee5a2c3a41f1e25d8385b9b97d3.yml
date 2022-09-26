@@ -1,19 +1,19 @@
 _id: req_wrk_9499a39dcd164ee5a2c3a41f1e25d8385b9b97d3
 type: Request
 parentId: wrk_9499a39dcd164ee5a2c3a41f1e25d838
-modified: 1663689228078
+modified: 1664099390833
 created: 1663340490345
-url: "{{ base_url }}/api/transfers/bankTransfers"
-name: /api/transfers/bankTransfers
+url: localhost:8080/api/transfers/bankTransfers
+name: /api/transfers/bankTransfers transfer to a existing iban
 description: ""
 method: POST
 body:
   mimeType: application/json
   text: |-
     {
-      "amount": 0,
+      "amount": 20,
       "note": "string",
-      "iban": "string"
+      "iban": "PT78003506511876219386924"
     }
 parameters: []
 headers:
@@ -22,7 +22,7 @@ headers:
     id: pair_6ee7060e5f004240a1bc3cce3f06c6dd
 authentication:
   type: bearer
-  token: "{{bearerToken}}"
+  token: ""
   prefix: ""
 metaSortKey: 700
 isPrivate: false

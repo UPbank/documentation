@@ -1,10 +1,10 @@
 _id: req_wrk_9499a39dcd164ee5a2c3a41f1e25d838929d3ea7
 type: Request
 parentId: wrk_9499a39dcd164ee5a2c3a41f1e25d838
-modified: 1663689228078
+modified: 1664100161797
 created: 1663340489398
-url: "{{ base_url }}/api/telcoProviders"
-name: /api/telcoProviders
+url: localhost:8080/api/telcoProviders
+name: /api/telcoProviders Get telcoProviders from user
 description: ""
 method: GET
 body: {}
@@ -12,7 +12,7 @@ parameters: []
 headers: []
 authentication:
   type: bearer
-  token: "{{bearerToken}}"
+  token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZHJycmNocmx0QGdtYWlsLmNvbSIsImV4cCI6MTY2NDEwMTMyNX0.FsSHb3cBt6B7wodBx-k54IHbRsxSKc9YFzbnbhf-gPxjhfguFpRz4z0z4uFW9i4OGGsP2fj-Yn3Lu6DSgi_4YA
   prefix: ""
 metaSortKey: 400
 isPrivate: false

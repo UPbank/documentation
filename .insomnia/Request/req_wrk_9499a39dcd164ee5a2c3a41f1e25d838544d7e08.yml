@@ -1,7 +1,7 @@
 _id: req_wrk_9499a39dcd164ee5a2c3a41f1e25d838544d7e08
 type: Request
 parentId: wrk_9499a39dcd164ee5a2c3a41f1e25d838
-modified: 1663696377097
+modified: 1664099413532
 created: 1663340490360
 url: "{{ base_url }}/api/accounts/"
 name: /api/accounts/
@@ -9,7 +9,25 @@ description: ""
 method: GET
 body:
   mimeType: application/json
-  text: ""
+  text: |-
+    {
+      "id": 0,
+      "email": "string",
+      "hash": "string",
+      "fullName": "string",
+      "birthdate": "2022-09-23",
+      "taxNumber": "string",
+      "idNumber": "string",
+      "balance": 0,
+      "iban": "string",
+      "address": {
+        "line1": "string",
+        "line2": "string",
+        "zipCode": "string",
+        "city": "string",
+        "district": "string"
+      }
+    }
 parameters: []
 headers:
   - name: Content-Type
