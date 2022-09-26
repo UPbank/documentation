@@ -1,0 +1,10 @@
+_id: ut_889e82aa81ca4133bfaf81f3bbc00d57
+type: UnitTest
+parentId: uts_14c29160cecd41eba4c5f894db17cd7a
+modified: 1664042932166
+created: 1664041405245
+requestId: req_72a0583e73a64e7aa90336e588bc2b42
+name: Get account of non existing user
+code: |-
+  const response1 = await insomnia.send();
+  expect(response1.status).to.equal(401);

@@ -1,0 +1,23 @@
+_id: req_5cbe7c0091eb49deb2ab679f20a90af3
+type: Request
+parentId: wrk_9499a39dcd164ee5a2c3a41f1e25d838
+modified: 1664043153770
+created: 1664041232055
+url: http://127.0.0.1:8080/api/transfers/
+name: /api/transfers/ Get transfers form user
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication:
+  type: bearer
+  token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZHJycmNocmx0QGdtYWlsLmNvbSIsImV4cCI6MTY2NDA0MzYyNX0.RxKgDuqf6YHbCkMFXPmCyZQIqgJ-2bknC4YViWIk0L1Dg-JPi1X7jjlGcXsoTa_u1xMIt5hddQeQLLadolnDJQ
+metaSortKey: -1664041232055
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

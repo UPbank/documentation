@@ -1,0 +1,44 @@
+_id: req_826cda804f064de7982c6cff8299e75d
+type: Request
+parentId: wrk_9499a39dcd164ee5a2c3a41f1e25d838
+modified: 1664044536120
+created: 1663693564998
+url: localhost:8080/register
+name: /register Valid email
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |+
+    {
+      "email": "random{% randomnumber 1, 10000, 0, 0 %}@upbank.pt",
+      "password": "string",
+      "fullName": "João Matos Dias",
+      "birthdate": "2000-01-01",
+      "taxNumber": "237455900",
+      "idNumber": "string",
+      "address": {
+        "line1": "string",
+        "line2": "string",
+        "zipCode": "8800-321",
+        "city": "string",
+        "district": "string"
+      }
+    }
+
+
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_892349109d1944cc8b9af60b23b40938
+authentication:
+  type: bearer
+metaSortKey: -1663693564998
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

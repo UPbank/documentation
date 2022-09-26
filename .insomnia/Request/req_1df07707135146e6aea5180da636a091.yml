@@ -1,0 +1,31 @@
+_id: req_1df07707135146e6aea5180da636a091
+type: Request
+parentId: wrk_9499a39dcd164ee5a2c3a41f1e25d838
+modified: 1664099356978
+created: 1663928331489
+url: localhost:8080/authenticate
+name: /authenticate no existing user
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+      "email": "pdrchrlt2@gmail.com",
+      "password": "cao123"  
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_3005dfafd6c541929fc236994676af19
+authentication:
+  type: bearer
+metaSortKey: -1663928331489
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

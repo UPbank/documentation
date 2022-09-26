@@ -1,0 +1,11 @@
+_id: ut_e0c099b422444ab18db6f18575feb030
+type: UnitTest
+parentId: uts_e890773b4d7c458887383c4f484027cb
+modified: 1663843187302
+created: 1663693435798
+requestId: req_1dcc4e4e9aa549f59829037e903b4da8
+name: Create an account with a valid full Name
+code: |-
+  const response1 = await insomnia.send();
+  expect(response1.data).to.be.a('string');
+  expect(response1.status).to.equal(200);

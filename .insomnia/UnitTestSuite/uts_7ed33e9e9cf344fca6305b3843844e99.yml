@@ -1,0 +1,6 @@
+_id: uts_7ed33e9e9cf344fca6305b3843844e99
+type: UnitTestSuite
+parentId: wrk_9499a39dcd164ee5a2c3a41f1e25d838
+modified: 1663842114580
+created: 1663842114580
+name: POST api/transfers/servicePayments

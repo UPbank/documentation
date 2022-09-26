@@ -1,0 +1,15 @@
+_id: ut_76f187a34f86489fa995010bb8ecae77
+type: UnitTest
+parentId: uts_e890773b4d7c458887383c4f484027cb
+modified: 1663923087892
+created: 1663841380074
+requestId: req_541b62d587d14e2398514a6ea1ef17e5
+name: Create account with a short tax Number
+code: >-
+  const response1 = await insomnia.send();
+
+  expect(response1.status).to.equal(400);
+
+  const body = JSON.parse(response1.data);
+
+  expect(body.message).to.equal("400 BAD_REQUEST \"registration.taxNumber.invalid\"");

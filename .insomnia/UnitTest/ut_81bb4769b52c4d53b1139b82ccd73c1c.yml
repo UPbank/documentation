@@ -1,0 +1,10 @@
+_id: ut_81bb4769b52c4d53b1139b82ccd73c1c
+type: UnitTest
+parentId: uts_fb666cb29dc34cd4a56590a5861b452d
+modified: 1664100383169
+created: 1664100383169
+requestId: null
+name: Delete account without balance
+code: |-
+  const response1 = await insomnia.send();
+  expect(response1.status).to.equal(200);

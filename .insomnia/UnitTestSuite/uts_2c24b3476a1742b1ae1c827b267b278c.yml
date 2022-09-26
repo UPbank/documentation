@@ -1,0 +1,6 @@
+_id: uts_2c24b3476a1742b1ae1c827b267b278c
+type: UnitTestSuite
+parentId: wrk_9499a39dcd164ee5a2c3a41f1e25d838
+modified: 1663842261988
+created: 1663842221461
+name: GET api/standingOrders

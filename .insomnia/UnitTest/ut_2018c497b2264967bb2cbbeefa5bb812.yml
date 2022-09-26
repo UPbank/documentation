@@ -1,0 +1,15 @@
+_id: ut_2018c497b2264967bb2cbbeefa5bb812
+type: UnitTest
+parentId: uts_e890773b4d7c458887383c4f484027cb
+modified: 1663923129892
+created: 1663842825368
+requestId: req_b932abd791f244a5a929badc3bf53444
+name: Create an account with a short zip-code
+code: >-
+  const response1 = await insomnia.send();
+
+  expect(response1.status).to.equal(400);
+
+  const body = JSON.parse(response1.data);
+
+  expect(body.message).to.equal("400 BAD_REQUEST \"registration.zip-code.invalid\"");

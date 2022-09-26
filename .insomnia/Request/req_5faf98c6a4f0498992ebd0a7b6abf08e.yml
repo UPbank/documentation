@@ -1,0 +1,44 @@
+_id: req_5faf98c6a4f0498992ebd0a7b6abf08e
+type: Request
+parentId: wrk_9499a39dcd164ee5a2c3a41f1e25d838
+modified: 1663922898100
+created: 1663691041005
+url: localhost:8080/register
+name: /register no district
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |+
+    {
+      "email": "random{% randomnumber 1, 10000, 0, 0 %}@upbank.pt",
+      "password": "string",
+      "fullName": "João Matos Dias",
+      "birthdate": "2000-01-01",
+      "taxNumber": "237455900",
+      "idNumber": "string",
+      "address": {
+        "line1": "string",
+        "line2": "string",
+        "zipCode": "8800-514",
+        "city": "string",
+        "district": null
+      }
+    }
+
+
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_c8348bd732be4cc5a449f7e2460bfcf9
+authentication:
+  type: bearer
+metaSortKey: -1663691041005
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

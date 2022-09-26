@@ -1,0 +1,6 @@
+_id: uts_11d157d151414d6db20b6fabcc8e7e19
+type: UnitTestSuite
+parentId: wrk_9499a39dcd164ee5a2c3a41f1e25d838
+modified: 1663842078468
+created: 1663842078468
+name: POST api/transfers/bankTransfers

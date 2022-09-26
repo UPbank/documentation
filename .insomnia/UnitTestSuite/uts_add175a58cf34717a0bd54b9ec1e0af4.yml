@@ -1,0 +1,6 @@
+_id: uts_add175a58cf34717a0bd54b9ec1e0af4
+type: UnitTestSuite
+parentId: wrk_9499a39dcd164ee5a2c3a41f1e25d838
+modified: 1663842560326
+created: 1663842560326
+name: DELETE api/cards/{id}

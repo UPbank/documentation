@@ -1,0 +1,44 @@
+_id: req_8fd6bec97c91409293041841c6fc457a
+type: Request
+parentId: wrk_9499a39dcd164ee5a2c3a41f1e25d838
+modified: 1663924544515
+created: 1663690140913
+url: localhost:8080/register
+name: /register no fullName
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |+
+    {
+      "email": "string",
+      "password": "string",
+      "fullName": null,
+      "birthdate": "2000-01-01",
+      "taxNumber": "string",
+      "idNumber": "string",
+      "address": {
+        "line1": "string",
+        "line2": "string",
+        "zipCode": "string",
+        "city": "string",
+        "district": "string"
+      }
+    }
+
+
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_ee9b9eb2b6a348f58057425c25c49801
+authentication:
+  type: bearer
+metaSortKey: -1663690140913
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

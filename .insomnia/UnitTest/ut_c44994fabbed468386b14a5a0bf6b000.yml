@@ -1,0 +1,10 @@
+_id: ut_c44994fabbed468386b14a5a0bf6b000
+type: UnitTest
+parentId: uts_11d157d151414d6db20b6fabcc8e7e19
+modified: 1664044427407
+created: 1664044427407
+requestId: null
+name: Transfer to a non existing bank
+code: |-
+  const response1 = await insomnia.send();
+  expect(response1.status).to.equal(200);

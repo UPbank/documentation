@@ -1,0 +1,10 @@
+_id: ut_2196a1be78644cb0a5588ca990e00b9c
+type: UnitTest
+parentId: uts_11d157d151414d6db20b6fabcc8e7e19
+modified: 1664044443471
+created: 1664044443471
+requestId: null
+name: Transfer to a bank with no money in account
+code: |-
+  const response1 = await insomnia.send();
+  expect(response1.status).to.equal(200);

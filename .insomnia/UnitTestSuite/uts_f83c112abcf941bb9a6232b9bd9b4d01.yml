@@ -1,0 +1,6 @@
+_id: uts_f83c112abcf941bb9a6232b9bd9b4d01
+type: UnitTestSuite
+parentId: wrk_9499a39dcd164ee5a2c3a41f1e25d838
+modified: 1663842296406
+created: 1663842270628
+name: POST api/standingOrders

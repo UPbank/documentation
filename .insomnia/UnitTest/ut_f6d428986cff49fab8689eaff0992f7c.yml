@@ -1,0 +1,11 @@
+_id: ut_f6d428986cff49fab8689eaff0992f7c
+type: UnitTest
+parentId: uts_e890773b4d7c458887383c4f484027cb
+modified: 1663840419804
+created: 1663693663770
+requestId: req_826cda804f064de7982c6cff8299e75d
+name: Create an account with a valid email
+code: |-
+  const response1 = await insomnia.send();
+  expect(response1.data).to.be.a('string');
+  expect(response1.status).to.equal(200);

@@ -1,0 +1,11 @@
+_id: ut_5b14213db0b94f14a31b79f9c2966609
+type: UnitTest
+parentId: uts_e890773b4d7c458887383c4f484027cb
+modified: 1663922626306
+created: 1663685406212
+requestId: req_8c8b9f09b06e4fa8a7024cb4bde7b0c1
+name: Verify if i can create an account without address line 1
+code: |-
+  const response1 = await insomnia.send();
+  expect(response1.data).to.be.a('string');
+  expect(response1.status).to.equal(500);

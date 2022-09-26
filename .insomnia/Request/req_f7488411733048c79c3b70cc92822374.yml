@@ -1,0 +1,32 @@
+_id: req_f7488411733048c79c3b70cc92822374
+type: Request
+parentId: wrk_9499a39dcd164ee5a2c3a41f1e25d838
+modified: 1664099353422
+created: 1663931802698
+url: localhost:8080/api/transfers/6
+name: /api/transfers/{id} Change transfer notes and image
+description: ""
+method: PUT
+body:
+  mimeType: application/json
+  text: >-2
+    
+      {
+    		"image":"https://www.google.pt/imgres?imgurl=https%3A%2F%2Flookaside.fbsbx.com%2Flookaside%2Fcrawler%2Fmedia%2F%3Fmedia_id%3D121213511392783&imgrefurl=https%3A%2F%2Fwww.facebook.com%2Fpages%2Fcategory%2FComedian%2FLetroll-121213511392783%2F&tbnid=Keh5QGJqccBCAM&vet=12ahUKEwjF0-W9ia76AhUKhxoKHcJZCMsQMygLegUIARCYAQ..i&docid=p9ln2i5MFRf6WM&w=284&h=177&q=leTroll&ved=2ahUKEwjF0-W9ia76AhUKhxoKHcJZCMsQMygLegUIARCYAQ",
+    		"notes":"Pagamento efetuado"	
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_58fd341309a14540a70add947cd5a7a8
+authentication:
+  type: bearer
+metaSortKey: -1663931802698
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,10 @@
+_id: ut_a2ddf13415644033b81e59400d72d80a
+type: UnitTest
+parentId: uts_7d4a2c1852014e6c866b1a8bbedc3ee8
+modified: 1663929024242
+created: 1663923600796
+requestId: req_381ad24a3ea949b9b547c954eb58ce74
+name: Authenticate existing user
+code: |-
+  const response1 = await insomnia.send();
+  expect(response1.status).to.equal(200);

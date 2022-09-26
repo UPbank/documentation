@@ -1,0 +1,6 @@
+_id: uts_ff81d09982d94c22a1d0c5796279e9e5
+type: UnitTestSuite
+parentId: wrk_9499a39dcd164ee5a2c3a41f1e25d838
+modified: 1663842483510
+created: 1663842483510
+name: GET api/cards

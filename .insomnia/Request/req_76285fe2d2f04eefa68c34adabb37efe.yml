@@ -1,0 +1,24 @@
+_id: req_76285fe2d2f04eefa68c34adabb37efe
+type: Request
+parentId: wrk_9499a39dcd164ee5a2c3a41f1e25d838
+modified: 1664101198985
+created: 1664100534984
+url: localhost:8080/api/cards/10030
+name: /api/cards/{id} Delete existing physical card
+description: ""
+method: DELETE
+body: {}
+parameters: []
+headers: []
+authentication:
+  type: bearer
+  token: "{{bearerToken}}"
+  prefix: ""
+metaSortKey: 1850
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

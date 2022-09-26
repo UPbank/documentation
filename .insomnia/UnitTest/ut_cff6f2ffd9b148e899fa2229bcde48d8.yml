@@ -1,0 +1,11 @@
+_id: ut_cff6f2ffd9b148e899fa2229bcde48d8
+type: UnitTest
+parentId: uts_e890773b4d7c458887383c4f484027cb
+modified: 1663749265928
+created: 1663686743796
+requestId: req_5faf98c6a4f0498992ebd0a7b6abf08e
+name: Verify if i can create an account without district
+code: |-
+  const response1 = await insomnia.send();
+  expect(response1.data).to.be.a('string');
+  expect(response1.status).to.equal(500);

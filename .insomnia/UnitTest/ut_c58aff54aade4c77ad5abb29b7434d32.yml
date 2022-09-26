@@ -1,0 +1,12 @@
+_id: ut_c58aff54aade4c77ad5abb29b7434d32
+type: UnitTest
+parentId: uts_e890773b4d7c458887383c4f484027cb
+modified: 1663695128822
+created: 1663685121930
+requestId: req_ec477c620ce74b489741771c0e06024f
+name: Verify if i can create an account without tax number
+code: |-
+  
+  const response1 = await insomnia.send();
+  expect(response1.data).to.be.a('string');
+  expect(response1.status).to.equal(400);

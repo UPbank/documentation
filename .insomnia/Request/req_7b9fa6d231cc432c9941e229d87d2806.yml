@@ -1,0 +1,42 @@
+_id: req_7b9fa6d231cc432c9941e229d87d2806
+type: Request
+parentId: wrk_9499a39dcd164ee5a2c3a41f1e25d838
+modified: 1664099269488
+created: 1663843364000
+url: localhost:8080/register
+name: /register create two cards
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+      "email": "random{% randomnumber 1, 10000, 0, 0 %}@upbank.pt",
+      "password": "string",
+      "fullName": "string",
+      "birthdate": "2000-01-01",
+      "taxNumber": "",
+      "idNumber": "string",
+      "address": {
+        "line1": "string",
+        "line2": "string",
+        "zipCode": "800-251",
+        "city": "string",
+        "district": "string"
+      }
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_67eaa7f25ecf4f52b1c2c4a1a9e95b95
+authentication:
+  type: bearer
+metaSortKey: -1663843364000
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,44 @@
+_id: req_7ad7c955ad7b418bbbf617b74e1a5bfc
+type: Request
+parentId: wrk_9499a39dcd164ee5a2c3a41f1e25d838
+modified: 1663922805650
+created: 1663690873271
+url: localhost:8080/register
+name: /register no zipCode
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |+
+    {
+      "email": "string6@hotmail2.com",
+      "password": "string",
+      "fullName": "string",
+      "birthdate": "2000-01-01",
+      "taxNumber": "237455900",
+      "idNumber": "string",
+      "address": {
+        "line1": "string",
+        "line2": "string",
+        "zipCode": null,
+        "city": "string",
+        "district": "string"
+      }
+    }
+
+
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_190bcaf251854f2191747e24942c62b0
+authentication:
+  type: bearer
+metaSortKey: -1663690873271
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

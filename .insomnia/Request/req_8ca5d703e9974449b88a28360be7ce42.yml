@@ -1,0 +1,44 @@
+_id: req_8ca5d703e9974449b88a28360be7ce42
+type: Request
+parentId: wrk_9499a39dcd164ee5a2c3a41f1e25d838
+modified: 1663843328578
+created: 1663692832867
+url: localhost:8080/register
+name: /register invalid fullName
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |+
+    {
+      "email": "stringg",
+      "password": "string",
+      "fullName": "Joao123",
+      "birthdate": "2000-01-01",
+      "taxNumber": "string",
+      "idNumber": "string",
+      "address": {
+        "line1": "string",
+        "line2": "string",
+        "zipCode": "string",
+        "city": "string",
+        "district": "string"
+      }
+    }
+
+
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_ef05752dc3c04208b097d4c1d6a25ddd
+authentication:
+  type: bearer
+metaSortKey: -1663692832867
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

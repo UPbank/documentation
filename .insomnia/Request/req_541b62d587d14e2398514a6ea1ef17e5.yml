@@ -1,0 +1,42 @@
+_id: req_541b62d587d14e2398514a6ea1ef17e5
+type: Request
+parentId: wrk_9499a39dcd164ee5a2c3a41f1e25d838
+modified: 1664098329373
+created: 1663841386612
+url: localhost:8080/register
+name: /register short tax number
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+      "email": "random{% randomnumber 1, 10000, 0, 0 %}@upbank.pt",
+      "password": "string",
+      "fullName": "João Matos Dias",
+      "birthdate": "2000-01-01",
+      "taxNumber": "23745590",
+      "idNumber": "string",
+      "address": {
+        "line1": "string",
+        "line2": "string",
+        "zipCode": "8800-251",
+        "city": "string",
+        "district": "string"
+      }
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_3f1155ffa4ba4dcaa68ef3f6d349c5ea
+authentication:
+  type: bearer
+metaSortKey: -1663841386612
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

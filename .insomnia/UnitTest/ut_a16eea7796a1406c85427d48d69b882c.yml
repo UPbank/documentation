@@ -1,0 +1,12 @@
+_id: ut_a16eea7796a1406c85427d48d69b882c
+type: UnitTest
+parentId: uts_fb666cb29dc34cd4a56590a5861b452d
+modified: 1664100316079
+created: 1664042659803
+requestId: req_wrk_9499a39dcd164ee5a2c3a41f1e25d838fa7efa7d
+name: Delete account with balance
+code: |
+  const response1 = await insomnia.send();
+  expect(response1.status).to.equal(400);
+  const body = JSON.parse(response1.data);
+  expect(body.message).to.equal("400 BAD_REQUEST \"balance.notEmpty\"")

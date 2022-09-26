@@ -1,0 +1,11 @@
+_id: ut_cac899efdc3d464ca0aa4c957b0350b3
+type: UnitTest
+parentId: uts_e890773b4d7c458887383c4f484027cb
+modified: 1663694970548
+created: 1663684803922
+requestId: req_766267aa5fbc4727a158195dc09bf6d9
+name: Verify if i can create an account whithout password
+code: |-
+  const response1 = await insomnia.send();
+  expect(response1.data).to.be.a('string');
+  expect(response1.status).to.equal(400);

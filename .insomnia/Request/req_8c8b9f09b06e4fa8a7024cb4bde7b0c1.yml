@@ -1,0 +1,44 @@
+_id: req_8c8b9f09b06e4fa8a7024cb4bde7b0c1
+type: Request
+parentId: wrk_9499a39dcd164ee5a2c3a41f1e25d838
+modified: 1663922684696
+created: 1663690578037
+url: localhost:8080/register
+name: /register no address line1
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |+
+    {
+      "email": "student@hotmail.com",
+      "password": "string",
+      "fullName": "string",
+      "birthdate": "2000-01-01",
+      "taxNumber": "237455900",
+      "idNumber": "string",
+      "address": {
+        "line1": null,
+        "line2": "string",
+        "zipCode": "8800-251",
+        "city": "string",
+        "district": "string"
+      }
+    }
+
+
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_5fca1c58a6d9415bbaccbac93883fae0
+authentication:
+  type: bearer
+metaSortKey: -1663690578037
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,44 @@
+_id: req_0d635e54718e4a369cac1f2c8d5566f4
+type: Request
+parentId: wrk_9499a39dcd164ee5a2c3a41f1e25d838
+modified: 1663758906997
+created: 1663692510579
+url: http://127.0.0.1:8080/register
+name: /register incorrect birthdate
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |+
+    {
+      "email": "stringsturing34",
+      "password": "string",
+      "fullName": "string",
+      "birthdate": "2032-01-01",
+      "taxNumber": "string",
+      "idNumber": "string",
+      "address": {
+        "line1": "string",
+        "line2": "string",
+        "zipCode": "string",
+        "city": "string",
+        "district": "string"
+      }
+    }
+
+
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_c909f828d724460e8049bf6e74c94020
+authentication:
+  type: bearer
+metaSortKey: -1663692510579
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

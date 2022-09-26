@@ -1,0 +1,6 @@
+_id: uts_ce3535873b624c20b657daaec35f13f5
+type: UnitTestSuite
+parentId: wrk_9499a39dcd164ee5a2c3a41f1e25d838
+modified: 1663841997202
+created: 1663841997202
+name: PUT api/transfers/{id}

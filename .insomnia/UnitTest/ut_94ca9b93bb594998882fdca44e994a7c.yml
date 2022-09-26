@@ -1,0 +1,11 @@
+_id: ut_94ca9b93bb594998882fdca44e994a7c
+type: UnitTest
+parentId: uts_e890773b4d7c458887383c4f484027cb
+modified: 1663840640379
+created: 1663686604313
+requestId: req_fe8bb2d9d4784b59b3611ffc87b0f865
+name: Verify if i can create an account without city
+code: |-
+  const response1 = await insomnia.send();
+  expect(response1.data).to.be.a('string');
+  expect(response1.status).to.equal(500);

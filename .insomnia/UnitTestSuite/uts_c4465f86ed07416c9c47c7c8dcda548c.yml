@@ -1,0 +1,6 @@
+_id: uts_c4465f86ed07416c9c47c7c8dcda548c
+type: UnitTestSuite
+parentId: wrk_9499a39dcd164ee5a2c3a41f1e25d838
+modified: 1663842202374
+created: 1663842202374
+name: POST api/transfers/telcoPayments

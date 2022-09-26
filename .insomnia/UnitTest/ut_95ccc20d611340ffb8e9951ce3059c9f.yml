@@ -1,0 +1,10 @@
+_id: ut_95ccc20d611340ffb8e9951ce3059c9f
+type: UnitTest
+parentId: uts_add175a58cf34717a0bd54b9ec1e0af4
+modified: 1664100885350
+created: 1664100874218
+requestId: req_7a55cf725c1541848baf2e3b00766f9f
+name: Deleting non existing physical card
+code: |-
+  const response1 = await insomnia.send();
+  expect(response1.status).to.equal(200);

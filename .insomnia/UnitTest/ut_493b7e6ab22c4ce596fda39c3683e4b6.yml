@@ -1,0 +1,12 @@
+_id: ut_493b7e6ab22c4ce596fda39c3683e4b6
+type: UnitTest
+parentId: uts_74768892f52c4266ac22ca78d15a067d
+modified: 1664100175892
+created: 1664100036185
+requestId: req_wrk_9499a39dcd164ee5a2c3a41f1e25d838929d3ea7
+name: Get telco providers from user
+code: |-
+  const response1 = await insomnia.send();
+  expect(response1.status).to.equal(200);
+  const body = JSON.parse(response1.data);
+  expect(body).to.be.an('array');

@@ -1,0 +1,6 @@
+_id: uts_65fcb71f856c4dbfa11e2211b3e0f719
+type: UnitTestSuite
+parentId: wrk_9499a39dcd164ee5a2c3a41f1e25d838
+modified: 1663842333335
+created: 1663842333335
+name: PUT api/standingOrders/{id}

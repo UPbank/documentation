@@ -1,0 +1,11 @@
+_id: ut_569c7e3292eb42908728c3fa72b722f3
+type: UnitTest
+parentId: uts_e890773b4d7c458887383c4f484027cb
+modified: 1663922792206
+created: 1663686248939
+requestId: req_7ad7c955ad7b418bbbf617b74e1a5bfc
+name: Verify if i can create an account without zip-code
+code: |-
+  const response1 = await insomnia.send();
+  expect(response1.data).to.be.a('string');
+  expect(response1.status).to.equal(500);

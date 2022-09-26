@@ -1,0 +1,11 @@
+_id: ut_bb34b0df6e284eab8d6b6ff2c3f680f8
+type: UnitTest
+parentId: uts_e890773b4d7c458887383c4f484027cb
+modified: 1663694976139
+created: 1663684912954
+requestId: req_8fd6bec97c91409293041841c6fc457a
+name: Verify if i can create an account with no name
+code: |-
+  const response1 = await insomnia.send();
+  expect(response1.data).to.be.a('string');
+  expect(response1.status).to.equal(400);

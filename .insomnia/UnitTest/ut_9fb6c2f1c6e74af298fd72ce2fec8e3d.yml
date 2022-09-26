@@ -1,0 +1,11 @@
+_id: ut_9fb6c2f1c6e74af298fd72ce2fec8e3d
+type: UnitTest
+parentId: uts_e890773b4d7c458887383c4f484027cb
+modified: 1663695262317
+created: 1663692619410
+requestId: req_0d635e54718e4a369cac1f2c8d5566f4
+name: Create an account with an incorrect birthdate
+code: |-
+  const response1 = await insomnia.send();
+  expect(response1.data).to.be.a('string');
+  expect(response1.status).to.equal(400);

@@ -1,0 +1,6 @@
+_id: uts_74768892f52c4266ac22ca78d15a067d
+type: UnitTestSuite
+parentId: wrk_9499a39dcd164ee5a2c3a41f1e25d838
+modified: 1663842624273
+created: 1663842601356
+name: GET api/telcoProviders

@@ -1,0 +1,10 @@
+_id: ut_4c3fb58099614e419481a6d7eaee51e1
+type: UnitTest
+parentId: uts_3159fd8cf43f45aa9ae33c5536406c46
+modified: 1664099796936
+created: 1664099785325
+requestId: req_wrk_9499a39dcd164ee5a2c3a41f1e25d8383d1308d6
+name: Get direct debits from user
+code: |-
+  const response1 = await insomnia.send();
+  expect(response1.status).to.equal(200);
