@@ -1,9 +1,9 @@
 _id: req_826cda804f064de7982c6cff8299e75d
 type: Request
 parentId: wrk_9499a39dcd164ee5a2c3a41f1e25d838
-modified: 1664044536120
+modified: 1664276908361
 created: 1663693564998
-url: localhost:8080/register
+url: "{{base_url}}/register"
 name: /register Valid email
 description: ""
 method: POST
@@ -34,6 +34,7 @@ headers:
     id: pair_892349109d1944cc8b9af60b23b40938
 authentication:
   type: bearer
+  token: "{{bearerToken}}"
 metaSortKey: -1663693564998
 isPrivate: false
 settingStoreCookies: true

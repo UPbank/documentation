@@ -1,10 +1,10 @@
 _id: req_72a0583e73a64e7aa90336e588bc2b42
 type: Request
 parentId: wrk_9499a39dcd164ee5a2c3a41f1e25d838
-modified: 1664098959880
+modified: 1664276942918
 created: 1663928885158
-url: localhost:8080/api/accounts/
-name: /api/accounts/ get account from non user
+url: "{{base_url}}/api/accounts/"
+name: /api/accounts/ get account from  user
 description: ""
 method: GET
 body: {}
@@ -20,7 +20,7 @@ headers:
     description: ""
 authentication:
   type: bearer
-  token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZHJycmNocmx0QGdtYWlsLmNvbSIsImV4cCI6MTY2NDEwMDA1Nn0.op-z22cyxOBWLUd0FCCb46Z0_JrBAZ5kb97NpKTf3ctQ0bh636iXBMNqyHiqyHAb2Rscdr5LpQ9ZKBmAB14tbQ
+  token: "{{bearerToken}}"
   disabled: false
   prefix: ""
 metaSortKey: -1663928885158

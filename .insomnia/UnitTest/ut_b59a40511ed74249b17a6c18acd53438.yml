@@ -1,10 +1,10 @@
 _id: ut_b59a40511ed74249b17a6c18acd53438
 type: UnitTest
 parentId: uts_f83c112abcf941bb9a6232b9bd9b4d01
-modified: 1664223882065
+modified: 1664270345805
 created: 1664223813814
 requestId: req_76d0cda874484a02b312da86bbd53b72
 name: Invalid schedule 8.4 (iban longer than 25 chars)
 code: |-
   const response1 = await insomnia.send();
-  expect(response1.status).to.equal(200);
+  expect(response1.status).to.equal(500);

@@ -1,9 +1,9 @@
 _id: req_5faf98c6a4f0498992ebd0a7b6abf08e
 type: Request
 parentId: wrk_9499a39dcd164ee5a2c3a41f1e25d838
-modified: 1663922898100
+modified: 1664276874472
 created: 1663691041005
-url: localhost:8080/register
+url: "{{base_url}}/register"
 name: /register no district
 description: ""
 method: POST
@@ -34,6 +34,7 @@ headers:
     id: pair_c8348bd732be4cc5a449f7e2460bfcf9
 authentication:
   type: bearer
+  token: "{{bearerToken}}"
 metaSortKey: -1663691041005
 isPrivate: false
 settingStoreCookies: true

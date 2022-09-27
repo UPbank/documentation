@@ -1,9 +1,9 @@
 _id: req_fe8bb2d9d4784b59b3611ffc87b0f865
 type: Request
 parentId: wrk_9499a39dcd164ee5a2c3a41f1e25d838
-modified: 1663925276127
+modified: 1664276870425
 created: 1663690955963
-url: localhost:8080/register
+url: "{{base_url}}/register"
 name: /register no city
 description: ""
 method: POST
@@ -35,6 +35,7 @@ headers:
     id: pair_a69b013356084e54b3d8378f29a957c0
 authentication:
   type: bearer
+  token: "{{bearerToken}}"
 metaSortKey: -1663690955963
 isPrivate: false
 settingStoreCookies: true

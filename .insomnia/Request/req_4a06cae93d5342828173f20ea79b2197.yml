@@ -1,9 +1,9 @@
 _id: req_4a06cae93d5342828173f20ea79b2197
 type: Request
 parentId: wrk_9499a39dcd164ee5a2c3a41f1e25d838
-modified: 1664223453557
+modified: 1664277024689
 created: 1664223323464
-url: localhost:8080/api/transfers/telcoPayments
+url: "{{base_url}}/api/transfers/telcoPayments"
 name: /api/transfers/telcoPayments valid payment 7.3
 description: ""
 method: POST
@@ -22,6 +22,7 @@ headers:
     id: pair_cfbf9129649d424ca2616761e5a1f811
 authentication:
   type: bearer
+  token: "{{bearerToken}}"
 metaSortKey: -1664199125037.75
 isPrivate: false
 settingStoreCookies: true

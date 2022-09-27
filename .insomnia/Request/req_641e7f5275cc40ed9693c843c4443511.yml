@@ -1,9 +1,9 @@
 _id: req_641e7f5275cc40ed9693c843c4443511
 type: Request
 parentId: wrk_9499a39dcd164ee5a2c3a41f1e25d838
-modified: 1664223577516
+modified: 1664277037897
 created: 1664223456266
-url: localhost:8080/api/standingOrders
+url: "{{base_url}}/api/standingOrders/"
 name: api/standingOrders valid schedule 8.1
 description: ""
 method: POST
@@ -12,9 +12,10 @@ body:
   text: |-
     {
       "id": 0,
-      "amount": 250,
+      "amount": 0,
       "frequency": "DAILY",
-      "receiverIban": "PT50123456789112345678921"
+      "sender": 0,
+      "iban": "PT50009728900000001000177"
     }
 parameters: []
 headers:
@@ -23,6 +24,7 @@ headers:
     id: pair_79809356baaa40d392c767d34cc25d8d
 authentication:
   type: bearer
+  token: "{{bearerToken}}"
 metaSortKey: -1664223456266
 isPrivate: false
 settingStoreCookies: true

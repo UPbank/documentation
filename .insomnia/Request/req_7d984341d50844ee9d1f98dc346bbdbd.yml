@@ -1,9 +1,9 @@
 _id: req_7d984341d50844ee9d1f98dc346bbdbd
 type: Request
 parentId: wrk_9499a39dcd164ee5a2c3a41f1e25d838
-modified: 1664190928658
+modified: 1664276972081
 created: 1664190539910
-url: "{{ base_url }}/api/telcoProviderslocalhost:8080/api/cards/100001"
+url: "{{base_url}}/api/cards/100001"
 name: /api/cards/{id} 10.1 active NFC/online payments
 description: ""
 method: PUT
@@ -23,6 +23,7 @@ headers:
     id: pair_7374029e9cca4b48ab5ea238a402c0c2
 authentication:
   type: bearer
+  token: "{{bearerToken}}"
 metaSortKey: -1664190539910
 isPrivate: false
 settingStoreCookies: true

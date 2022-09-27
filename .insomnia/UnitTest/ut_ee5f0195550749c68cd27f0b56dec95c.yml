@@ -1,10 +1,10 @@
 _id: ut_ee5f0195550749c68cd27f0b56dec95c
 type: UnitTest
 parentId: uts_f83c112abcf941bb9a6232b9bd9b4d01
-modified: 1664223496044
+modified: 1664270058368
 created: 1664223442285
 requestId: req_641e7f5275cc40ed9693c843c4443511
 name: Valid schedule 8.1
 code: |-
   const response1 = await insomnia.send();
-  expect(response1.status).to.equal(200);
+  expect(response1.status).to.equal(201);

@@ -1,9 +1,9 @@
 _id: req_541b62d587d14e2398514a6ea1ef17e5
 type: Request
 parentId: wrk_9499a39dcd164ee5a2c3a41f1e25d838
-modified: 1664098329373
+modified: 1664276912740
 created: 1663841386612
-url: localhost:8080/register
+url: "{{base_url}}/register"
 name: /register short tax number
 description: ""
 method: POST
@@ -32,6 +32,7 @@ headers:
     id: pair_3f1155ffa4ba4dcaa68ef3f6d349c5ea
 authentication:
   type: bearer
+  token: "{{bearerToken}}"
 metaSortKey: -1663841386612
 isPrivate: false
 settingStoreCookies: true

@@ -1,7 +1,7 @@
 _id: req_wrk_9499a39dcd164ee5a2c3a41f1e25d83813a2828b
 type: Request
 parentId: wrk_9499a39dcd164ee5a2c3a41f1e25d838
-modified: 1664099281182
+modified: 1664276737200
 created: 1663340490363
 url: "{{ base_url }}/register"
 name: /register
@@ -11,16 +11,16 @@ body:
   mimeType: application/json
   text: |-
     	{
-      "email": "string",
+      "email": "pdrchrlt@gmail.com",
       "password": "string",
       "fullName": "string",
       "birthdate": "2000-01-01",
-      "taxNumber": "string",
+      "taxNumber": "237455900",
       "idNumber": "string",
       "address": {
         "line1": "string",
         "line2": "string",
-        "zipCode": "string",
+        "zipCode": "8800-514",
         "city": "string",
         "district": "string"
       }
@@ -40,6 +40,7 @@ headers:
     description: ""
 authentication:
   type: bearer
+  token: "{{bearerToken}}"
 metaSortKey: 1200
 isPrivate: false
 settingStoreCookies: true

@@ -1,10 +1,10 @@
 _id: req_721fcd76ae404dc8a378f863adb79323
 type: Request
 parentId: wrk_9499a39dcd164ee5a2c3a41f1e25d838
-modified: 1664098197591
+modified: 1664276952203
 created: 1663931070446
-url: http://127.0.0.1:8080/api/accounts/
-name: /api/accounts/ get account from existing user
+url: "{{base_url}}/api/accounts/"
+name: /api/accounts/ get account from non existing user
 description: ""
 method: GET
 body: {}
@@ -12,7 +12,7 @@ parameters: []
 headers: []
 authentication:
   type: bearer
-  token: ""
+  token: "{{bearerToken}}"
 metaSortKey: -1663931070446
 isPrivate: false
 settingStoreCookies: true

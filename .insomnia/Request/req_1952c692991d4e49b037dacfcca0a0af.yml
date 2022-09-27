@@ -1,9 +1,9 @@
 _id: req_1952c692991d4e49b037dacfcca0a0af
 type: Request
 parentId: wrk_9499a39dcd164ee5a2c3a41f1e25d838
-modified: 1663925456304
+modified: 1664276879624
 created: 1663691767693
-url: http://127.0.0.1:8080/register
+url: "{{base_url}}register"
 name: /register less than 18years old
 description: ""
 method: POST
@@ -34,6 +34,7 @@ headers:
     id: pair_36b203bcfb1e453dae518133eb28ce76
 authentication:
   type: bearer
+  token: "{{bearerToken}}"
 metaSortKey: -1663691767693
 isPrivate: false
 settingStoreCookies: true
