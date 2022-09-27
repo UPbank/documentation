@@ -1,0 +1,10 @@
+_id: ut_82aa93753a3b43e4877fa063b084f21f
+type: UnitTest
+parentId: uts_c4465f86ed07416c9c47c7c8dcda548c
+modified: 1664223364647
+created: 1664223139777
+requestId: req_238e418dab20412cb39fd20e091b32cd
+name: Valid payment 7.2
+code: |-
+  const response1 = await insomnia.send();
+  expect(response1.status).to.equal(200);

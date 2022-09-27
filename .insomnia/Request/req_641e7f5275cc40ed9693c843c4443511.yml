@@ -1,0 +1,33 @@
+_id: req_641e7f5275cc40ed9693c843c4443511
+type: Request
+parentId: wrk_9499a39dcd164ee5a2c3a41f1e25d838
+modified: 1664223577516
+created: 1664223456266
+url: localhost:8080/api/standingOrders
+name: api/standingOrders valid schedule 8.1
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+      "id": 0,
+      "amount": 250,
+      "frequency": "DAILY",
+      "receiverIban": "PT50123456789112345678921"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_79809356baaa40d392c767d34cc25d8d
+authentication:
+  type: bearer
+metaSortKey: -1664223456266
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

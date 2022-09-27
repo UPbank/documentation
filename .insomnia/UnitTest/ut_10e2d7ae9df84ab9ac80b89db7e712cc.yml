@@ -1,0 +1,10 @@
+_id: ut_10e2d7ae9df84ab9ac80b89db7e712cc
+type: UnitTest
+parentId: uts_4d081dfe9881460d922de293ebdc260f
+modified: 1664223130046
+created: 1664222929880
+requestId: req_f050e0ae35874a19b2b02a21dc3e5986
+name: Invalid payment 6.1
+code: |-
+  const response1 = await insomnia.send();
+  expect(response1.status).to.equal(400);

@@ -1,0 +1,31 @@
+_id: req_f050e0ae35874a19b2b02a21dc3e5986
+type: Request
+parentId: wrk_9499a39dcd164ee5a2c3a41f1e25d838
+modified: 1664223217649
+created: 1664222455039
+url: localhost:8080/api/transfers/govermentPayments
+name: api/transfers/govermentPayments invalid payment 6.1
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |
+    {
+      "reference": 123456789123456,
+      "amount": 123.45
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_8359fe00f6034371a9ade42ab99f11f9
+authentication:
+  type: bearer
+metaSortKey: -1664190950224
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,33 @@
+_id: req_5deddb5e28bd4858a8e13ee25c92af28
+type: Request
+parentId: wrk_9499a39dcd164ee5a2c3a41f1e25d838
+modified: 1664266846435
+created: 1664266729560
+url: localhost:8080/api/cards/10001
+name: /api/cards/{id} 10.5 change PIN
+description: ""
+method: PUT
+body:
+  mimeType: application/json
+  text: |-
+    {
+      "name": "Physical Card",
+      "pinCode": 1144,
+      "nfcPayments": null,
+      "onlinePayments": null
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_56b31f05e11b42f3861d7461540dea0c
+authentication:
+  type: bearer
+metaSortKey: -1664266729560
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

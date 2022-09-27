@@ -1,0 +1,10 @@
+_id: ut_d716fc811a7144a79cf4f30aba4cc412
+type: UnitTest
+parentId: uts_390fd0a86ef342b29e320fa22eda367e
+modified: 1664223749794
+created: 1664223704290
+requestId: req_c9951f44603145269184919c1b54f2a2
+name: Delete a schedule 8.3
+code: |-
+  const response1 = await insomnia.send();
+  expect(response1.status).to.equal(200);

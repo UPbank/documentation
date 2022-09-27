@@ -1,0 +1,33 @@
+_id: req_22f905b0a8ff44518dd678c7777fdb3f
+type: Request
+parentId: wrk_9499a39dcd164ee5a2c3a41f1e25d838
+modified: 1664223707084
+created: 1664223578316
+url: localhost:8080/api/standingOrders/0
+name: api/standingOrders/0 change scheduled 8.2 (change frequency daily to weekly)
+description: ""
+method: PUT
+body:
+  mimeType: application/json
+  text: |
+    {
+      "id": 0,
+      "amount": 250,
+      "frequency": "WEEKLY",
+      "receiverIban": "PT50123456789112345678921"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_2745798f05074ca7abb7ab2a70b54d8c
+authentication:
+  type: bearer
+metaSortKey: -1664223578316
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

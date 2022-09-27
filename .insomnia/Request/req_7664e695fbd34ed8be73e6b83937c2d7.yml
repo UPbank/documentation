@@ -1,0 +1,33 @@
+_id: req_7664e695fbd34ed8be73e6b83937c2d7
+type: Request
+parentId: wrk_9499a39dcd164ee5a2c3a41f1e25d838
+modified: 1664191166793
+created: 1664190930278
+url: localhost:8080/api/cards/10001
+name: /api/cards/{id} 10.3 inactive NFC/online payments
+description: ""
+method: PUT
+body:
+  mimeType: application/json
+  text: |-
+    {
+      "name": "Physical Card",
+      "pinCode": 0,
+      "nfcPayments": false,
+      "onlinePayments": false
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_593957795e184a46bb15ec39691d4cd8
+authentication:
+  type: bearer
+metaSortKey: -1664190930278
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

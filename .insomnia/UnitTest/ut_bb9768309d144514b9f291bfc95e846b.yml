@@ -1,0 +1,10 @@
+_id: ut_bb9768309d144514b9f291bfc95e846b
+type: UnitTest
+parentId: uts_95e03c8356ec450ea64342d5c26b9ba7
+modified: 1664191008961
+created: 1664191000957
+requestId: req_7664e695fbd34ed8be73e6b83937c2d7
+name: 10.3 inactive NFC/online payments
+code: |-
+  const response1 = await insomnia.send();
+  expect(response1.status).to.equal(200);

@@ -1,0 +1,22 @@
+_id: req_c9951f44603145269184919c1b54f2a2
+type: Request
+parentId: wrk_9499a39dcd164ee5a2c3a41f1e25d838
+modified: 1664223746684
+created: 1664223709299
+url: localhost:8080/api/standingOrders/0
+name: api/standingOrders Delete a schedule 8.3
+description: ""
+method: DELETE
+body: {}
+parameters: []
+headers: []
+authentication:
+  type: bearer
+metaSortKey: -1664223709299
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,32 @@
+_id: req_238e418dab20412cb39fd20e091b32cd
+type: Request
+parentId: wrk_9499a39dcd164ee5a2c3a41f1e25d838
+modified: 1664223337855
+created: 1664223316771
+url: localhost:8080/api/transfers/telcoPayments
+name: /api/transfers/telcoPayments valid payment 7.2
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+      "provider": 1,
+      "phoneNumber": 918880300,
+      "amount": 10
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_cfbf9129649d424ca2616761e5a1f811
+authentication:
+  type: bearer
+metaSortKey: -1664207160229.5
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

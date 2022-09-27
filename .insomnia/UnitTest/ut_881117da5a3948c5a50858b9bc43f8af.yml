@@ -1,0 +1,10 @@
+_id: ut_881117da5a3948c5a50858b9bc43f8af
+type: UnitTest
+parentId: uts_95e03c8356ec450ea64342d5c26b9ba7
+modified: 1664266904832
+created: 1664266839759
+requestId: req_c22f040a5c084d7499245f516f0d4ee0
+name: 10.6 change to invalid PIN
+code: |-
+  const response1 = await insomnia.send();
+  expect(response1.status).to.equal(400);

@@ -1,0 +1,32 @@
+_id: req_27371ee6f5b14cd7a8e0042d4366d74f
+type: Request
+parentId: wrk_9499a39dcd164ee5a2c3a41f1e25d838
+modified: 1664222464505
+created: 1664191299625
+url: localhost:8080/api/transfers/servicePayments
+name: api/transfers/servicePayments invalid payment 5.3
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+      "entity": 1234,
+      "reference": 123456789,
+      "amount": 12.34
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_8359fe00f6034371a9ade42ab99f11f9
+authentication:
+  type: bearer
+metaSortKey: -1664190970170
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,32 @@
+_id: req_20a701b749e24102b5220151a9424ff9
+type: Request
+parentId: wrk_9499a39dcd164ee5a2c3a41f1e25d838
+modified: 1664191269248
+created: 1664191089846
+url: localhost:8080/api/transfers/servicePayments
+name: api/transfers/servicePayments valid payment 5.1
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+      "entity": 12345,
+      "reference": 123456789,
+      "amount": 12.34
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_8359fe00f6034371a9ade42ab99f11f9
+authentication:
+  type: bearer
+metaSortKey: -1664191089846
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

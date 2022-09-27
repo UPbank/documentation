@@ -1,0 +1,33 @@
+_id: req_7d984341d50844ee9d1f98dc346bbdbd
+type: Request
+parentId: wrk_9499a39dcd164ee5a2c3a41f1e25d838
+modified: 1664190928658
+created: 1664190539910
+url: "{{ base_url }}/api/telcoProviderslocalhost:8080/api/cards/100001"
+name: /api/cards/{id} 10.1 active NFC/online payments
+description: ""
+method: PUT
+body:
+  mimeType: application/json
+  text: |-
+    {
+      "name": "Physical Card",
+      "pinCode": 0,
+      "nfcPayments": true,
+      "onlinePayments": true
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_7374029e9cca4b48ab5ea238a402c0c2
+authentication:
+  type: bearer
+metaSortKey: -1664190539910
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

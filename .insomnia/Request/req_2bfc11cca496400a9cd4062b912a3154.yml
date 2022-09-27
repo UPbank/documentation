@@ -1,0 +1,33 @@
+_id: req_2bfc11cca496400a9cd4062b912a3154
+type: Request
+parentId: wrk_9499a39dcd164ee5a2c3a41f1e25d838
+modified: 1664223078156
+created: 1664222695236
+url: "{{ base_url
+  }}/api/telcoProviderslocalhost:8080/api/cards/100001localhost:8080/api/transf\
+  ers/govermentPayments"
+name: api/transfers/govermentPayments invalid payment 6.4
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |
+    {
+      "reference": 123456789123456,
+      "amount": 999999999999
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_8359fe00f6034371a9ade42ab99f11f9
+authentication:
+  type: bearer
+metaSortKey: -1664190935264.5
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

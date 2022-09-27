@@ -1,0 +1,33 @@
+_id: req_76d0cda874484a02b312da86bbd53b72
+type: Request
+parentId: wrk_9499a39dcd164ee5a2c3a41f1e25d838
+modified: 1664266726326
+created: 1664223820073
+url: localhost:8080/api/standingOrders
+name: api/standingOrders invalid schedule 8.4(iban longer than 25 chars)
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+      "id": 0,
+      "amount": 250,
+      "frequency": "DAILY",
+      "receiverIban": "PT501234567891123456789210"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_d1b8fd67c164400f8a82246d49e6dca1
+authentication:
+  type: bearer
+metaSortKey: -1664223820073
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
