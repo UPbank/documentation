@@ -3,7 +3,7 @@ type: Request
 parentId: wrk_9499a39dcd164ee5a2c3a41f1e25d838
 modified: 1664099805985
 created: 1663340490321
-url: localhost:8080/api/directDebits
+url: "{{ base_url }}/api/directDebits"
 name: /api/directDebits Direct debits from user
 description: ""
 method: GET

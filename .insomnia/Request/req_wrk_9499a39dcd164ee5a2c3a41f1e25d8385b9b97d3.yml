@@ -3,7 +3,7 @@ type: Request
 parentId: wrk_9499a39dcd164ee5a2c3a41f1e25d838
 modified: 1664099390833
 created: 1663340490345
-url: localhost:8080/api/transfers/bankTransfers
+url: "{{ base_url }}/api/transfers/bankTransfers"
 name: /api/transfers/bankTransfers transfer to a existing iban
 description: ""
 method: POST

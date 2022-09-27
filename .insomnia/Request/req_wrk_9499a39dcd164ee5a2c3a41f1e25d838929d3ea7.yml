@@ -3,7 +3,7 @@ type: Request
 parentId: wrk_9499a39dcd164ee5a2c3a41f1e25d838
 modified: 1664100161797
 created: 1663340489398
-url: localhost:8080/api/telcoProviders
+url: "{{ base_url }}/api/telcoProviders"
 name: /api/telcoProviders Get telcoProviders from user
 description: ""
 method: GET

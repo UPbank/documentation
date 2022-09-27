@@ -3,7 +3,7 @@ type: Request
 parentId: wrk_9499a39dcd164ee5a2c3a41f1e25d838
 modified: 1664180342891
 created: 1663340490308
-url: localhost:8080/api/cards/10034
+url: "{{ base_url }}/api/cards/{{ id }}"
 name: /api/cards/{id}
 description: ""
 method: PUT

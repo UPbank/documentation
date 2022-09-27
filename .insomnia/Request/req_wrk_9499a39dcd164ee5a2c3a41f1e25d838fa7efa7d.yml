@@ -3,7 +3,7 @@ type: Request
 parentId: wrk_9499a39dcd164ee5a2c3a41f1e25d838
 modified: 1664100359340
 created: 1663340490356
-url: "{{ base_url }}/api/accounts/localhost:8080/api/accounts/"
+url: "{{ base_url }}/api/accounts/"
 name: /api/accounts/ Delete account with balance
 description: ""
 method: DELETE

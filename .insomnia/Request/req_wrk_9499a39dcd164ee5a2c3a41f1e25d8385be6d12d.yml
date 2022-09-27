@@ -3,7 +3,7 @@ type: Request
 parentId: wrk_9499a39dcd164ee5a2c3a41f1e25d838
 modified: 1664101063188
 created: 1663340490304
-url: localhost:8080/api/cards/10031
+url: "{{ base_url }}/api/cards/{{ id }}"
 name: /api/cards/{id} Delete existing virtual card
 description: ""
 method: DELETE

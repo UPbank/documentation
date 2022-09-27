@@ -3,7 +3,7 @@ type: Request
 parentId: wrk_9499a39dcd164ee5a2c3a41f1e25d838
 modified: 1664099962168
 created: 1663340490330
-url: localhost:8080/api/standingOrders
+url: "{{ base_url }}/api/standingOrders"
 name: /api/standingOrders Get standing Orders from user
 description: ""
 method: GET
