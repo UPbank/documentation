@@ -1,9 +1,9 @@
 _id: req_f7488411733048c79c3b70cc92822374
 type: Request
 parentId: wrk_9499a39dcd164ee5a2c3a41f1e25d838
-modified: 1664276957349
+modified: 1664357603760
 created: 1663931802698
-url: "{{base_url}}/api/transfers/"
+url: "{{base_url}}/api/transfers/10101"
 name: /api/transfers/{id} Change transfer notes and image
 description: ""
 method: PUT

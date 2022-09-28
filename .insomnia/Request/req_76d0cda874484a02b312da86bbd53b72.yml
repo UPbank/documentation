@@ -1,7 +1,7 @@
 _id: req_76d0cda874484a02b312da86bbd53b72
 type: Request
 parentId: wrk_9499a39dcd164ee5a2c3a41f1e25d838
-modified: 1664277049197
+modified: 1664360718454
 created: 1664223820073
 url: "{{base_url}}/api/standingOrders/"
 name: api/standingOrders invalid schedule 8.4(iban longer than 25 chars)

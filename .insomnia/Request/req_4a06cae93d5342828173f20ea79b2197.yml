@@ -1,19 +1,20 @@
 _id: req_4a06cae93d5342828173f20ea79b2197
 type: Request
 parentId: wrk_9499a39dcd164ee5a2c3a41f1e25d838
-modified: 1664277024689
+modified: 1664360475448
 created: 1664223323464
 url: "{{base_url}}/api/transfers/telcoPayments"
-name: /api/transfers/telcoPayments valid payment 7.3
+name: /api/transfers/telcoPayments invalid payment 7.3
 description: ""
 method: POST
 body:
   mimeType: application/json
   text: |-
     {
-      "provider": 1,
-      "phoneNumber": 963456789,
-      "amount": 999099999990909
+      "amount": 0,
+      "provider": "Altice",
+      "note": "string",
+      "phoneNumber": 9188803001
     }
 parameters: []
 headers:

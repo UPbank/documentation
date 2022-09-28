@@ -1,10 +1,10 @@
 _id: ut_b0fd7f2cb1f0431897ef4d911b68bc8d
 type: UnitTest
 parentId: uts_add175a58cf34717a0bd54b9ec1e0af4
-modified: 1664100846214
+modified: 1664361551319
 created: 1664100840378
 requestId: req_7a55cf725c1541848baf2e3b00766f9f
 name: Deleting exisiting physical card
 code: |-
   const response1 = await insomnia.send();
-  expect(response1.status).to.equal(200);
+  expect(response1.status).to.equal(204);

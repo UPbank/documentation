@@ -1,9 +1,9 @@
 _id: req_721fcd76ae404dc8a378f863adb79323
 type: Request
 parentId: wrk_9499a39dcd164ee5a2c3a41f1e25d838
-modified: 1664276952203
+modified: 1664357386288
 created: 1663931070446
-url: "{{base_url}}/api/accounts/"
+url: "{{base_url}}/api/accounts/100018"
 name: /api/accounts/ get account from non existing user
 description: ""
 method: GET

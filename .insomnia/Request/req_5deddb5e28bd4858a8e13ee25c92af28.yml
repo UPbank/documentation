@@ -1,9 +1,9 @@
 _id: req_5deddb5e28bd4858a8e13ee25c92af28
 type: Request
 parentId: wrk_9499a39dcd164ee5a2c3a41f1e25d838
-modified: 1664277052880
+modified: 1664361529718
 created: 1664266729560
-url: "{{ base_url }}/api/telcoProvidersapi/cards/10001"
+url: "{{ base_url }}/api/telcoProviders{{ base_url }}/api/cards/10018"
 name: /api/cards/{id} 10.5 change PIN
 description: ""
 method: PUT
@@ -11,8 +11,7 @@ body:
   mimeType: application/json
   text: |-
     {
-      "name": "Physical Card",
-      "pinCode": 0,
+      "pinCode": 4444,
       "nfcPayments": null,
       "onlinePayments": null
     }

@@ -1,9 +1,9 @@
 _id: req_7664e695fbd34ed8be73e6b83937c2d7
 type: Request
 parentId: wrk_9499a39dcd164ee5a2c3a41f1e25d838
-modified: 1664276980775
+modified: 1664361326291
 created: 1664190930278
-url: "{{base_url}}/api/cards/10001"
+url: "{{base_url}}/api/cards/10018"
 name: /api/cards/{id} 10.3 inactive NFC/online payments
 description: ""
 method: PUT
@@ -11,8 +11,7 @@ body:
   mimeType: application/json
   text: |-
     {
-      "name": "Physical Card",
-      "pinCode": 0,
+      "pinCode": 9999,
       "nfcPayments": false,
       "onlinePayments": false
     }

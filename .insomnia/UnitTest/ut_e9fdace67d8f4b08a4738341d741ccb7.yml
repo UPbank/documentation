@@ -1,10 +1,15 @@
 _id: ut_e9fdace67d8f4b08a4738341d741ccb7
 type: UnitTest
 parentId: uts_7ed33e9e9cf344fca6305b3843844e99
-modified: 1664222417473
+modified: 1664359971863
 created: 1664192107220
 requestId: req_27371ee6f5b14cd7a8e0042d4366d74f
 name: Invalid payment 5.3
-code: |-
+code: >-
   const response1 = await insomnia.send();
+
   expect(response1.status).to.equal(400);
+
+  const body = JSON.parse(response1.data);
+
+  expect(body.message).to.equal("400 BAD_REQUEST \"reference.must.have.9.digits\"")

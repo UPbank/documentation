@@ -1,7 +1,7 @@
 _id: req_wrk_9499a39dcd164ee5a2c3a41f1e25d8385b9b97d3
 type: Request
 parentId: wrk_9499a39dcd164ee5a2c3a41f1e25d838
-modified: 1664276744305
+modified: 1664357415373
 created: 1663340490345
 url: "{{ base_url }}/api/transfers/bankTransfers"
 name: /api/transfers/bankTransfers transfer to a existing iban
@@ -11,9 +11,10 @@ body:
   mimeType: application/json
   text: |-
     {
-      "amount": 20,
-      "note": "string",
-      "iban": "PT78003506511876219386924"
+      "amount": 0,
+      "note": "letras",
+      "image": "istoesostrings",
+      "iban": "PT50009728900000001001729"
     }
 parameters: []
 headers:

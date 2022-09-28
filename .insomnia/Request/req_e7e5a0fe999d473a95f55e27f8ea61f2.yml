@@ -1,0 +1,35 @@
+_id: req_e7e5a0fe999d473a95f55e27f8ea61f2
+type: Request
+parentId: wrk_9499a39dcd164ee5a2c3a41f1e25d838
+modified: 1664357966122
+created: 1664357629598
+url: "{{ base_url }}/api/transfers/bankTransfers"
+name: /api/transfers/bankTransfers transfer to a  non existing bank
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+      "amount": 1,
+      "note": "avd",
+      "image": "sca",
+      "iban": "PT50000786307663658609507"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_6ee7060e5f004240a1bc3cce3f06c6dd
+authentication:
+  type: bearer
+  token: "{{bearerToken}}"
+  prefix: ""
+metaSortKey: 750
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

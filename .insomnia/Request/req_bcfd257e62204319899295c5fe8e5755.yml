@@ -1,0 +1,31 @@
+_id: req_bcfd257e62204319899295c5fe8e5755
+type: Request
+parentId: wrk_9499a39dcd164ee5a2c3a41f1e25d838
+modified: 1664356416763
+created: 1664354903279
+url: "{{base_url}}/api/directDebits/10020"
+name: /api/directDebits{id} activate
+description: ""
+method: PUT
+body:
+  mimeType: application/json
+  text: |-
+    {
+      "active": false
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_a532336284474a31b08d7b1641cf2f33
+authentication:
+  type: bearer
+  token: "{{ _.bearerToken }}"
+metaSortKey: -1664354903279
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
