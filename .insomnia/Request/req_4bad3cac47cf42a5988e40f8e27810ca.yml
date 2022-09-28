@@ -1,0 +1,34 @@
+_id: req_4bad3cac47cf42a5988e40f8e27810ca
+type: Request
+parentId: wrk_9499a39dcd164ee5a2c3a41f1e25d838
+modified: 1664360637857
+created: 1664360520739
+url: "{{base_url}}/api/transfers/telcoPayments"
+name: /api/transfers/telcoPayments invalid payment not enough balance
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+      "amount": 99999999,
+      "provider": "Altice",
+      "note": "string",
+      "phoneNumber": 965506345
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_cfbf9129649d424ca2616761e5a1f811
+authentication:
+  type: bearer
+  token: "{{bearerToken}}"
+metaSortKey: -1664195107441.875
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

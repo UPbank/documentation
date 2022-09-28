@@ -1,0 +1,10 @@
+_id: ut_67648fb188e24179b17e5daff8de336e
+type: UnitTest
+parentId: uts_397243e9c4d548a5b54556b1ab1048f9
+modified: 1664355850012
+created: 1664354874810
+requestId: req_bcfd257e62204319899295c5fe8e5755
+name: Activate direct debit
+code: |-
+  const response1 = await insomnia.send();
+  expect(response1.status).to.equal(200);

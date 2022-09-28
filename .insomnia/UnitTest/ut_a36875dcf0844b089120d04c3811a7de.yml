@@ -1,0 +1,12 @@
+_id: ut_a36875dcf0844b089120d04c3811a7de
+type: UnitTest
+parentId: uts_7ed33e9e9cf344fca6305b3843844e99
+modified: 1664360426937
+created: 1664353539718
+requestId: req_d00deb115ddf4a90b8a9f97a1ecb4fbd
+name: Invalid payment 5.4 balance
+code: |-
+  const response1 = await insomnia.send();
+  expect(response1.status).to.equal(400);
+  const body = JSON.parse(response1.data);
+  expect(body.message).to.equal("400 BAD_REQUEST \"not.enough.balance\"")

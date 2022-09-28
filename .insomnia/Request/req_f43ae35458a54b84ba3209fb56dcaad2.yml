@@ -1,0 +1,35 @@
+_id: req_f43ae35458a54b84ba3209fb56dcaad2
+type: Request
+parentId: wrk_9499a39dcd164ee5a2c3a41f1e25d838
+modified: 1664358028066
+created: 1664353614055
+url: "{{base_url}}/api/transfers/servicePayments"
+name: /api/transfers/servicePayments 5.2.2 entity++
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+      "amount": 1,
+      "note": "string",
+      "image": "string",
+      "entity": 123456,
+      "reference": 123456789
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_a8dfdb434f56408bb416f84f5e7f143c
+authentication:
+  type: bearer
+  token: "{{ _.bearerToken }}"
+metaSortKey: -1664353614055
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

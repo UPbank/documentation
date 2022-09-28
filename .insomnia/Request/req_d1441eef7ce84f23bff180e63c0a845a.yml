@@ -1,9 +1,9 @@
 _id: req_d1441eef7ce84f23bff180e63c0a845a
 type: Request
 parentId: wrk_9499a39dcd164ee5a2c3a41f1e25d838
-modified: 1664276995658
+modified: 1664360170470
 created: 1664222577937
-url: "{{base_url}}/api/transfers/govermentPayments"
+url: "{{base_url}}/api/transfers/governmentPayments"
 name: api/transfers/govermentPayments  invalid payment 6.3
 description: ""
 method: POST
@@ -11,8 +11,10 @@ body:
   mimeType: application/json
   text: |
     {
-      "reference": 1234567891234560,
-      "amount": 123.45
+      "amount": 1234,
+      "note": "string",
+      "image": "string",
+      "reference": 1234567891234560
     }
 parameters: []
 headers:

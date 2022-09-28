@@ -1,0 +1,35 @@
+_id: req_ab9907d3c6434d479d4371dfe8e7e43d
+type: Request
+parentId: wrk_9499a39dcd164ee5a2c3a41f1e25d838
+modified: 1664356402041
+created: 1664355027623
+url: "{{base_url}}/api/directDebits"
+name: /api/directDebits
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+      "id": 10017,
+      "active": true,
+      "lastDebit": "2022-09-28",
+      "receiver":10017,
+      "sender":10017
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_27f06a074c604dcb84d83a7fb7420c51
+authentication:
+  type: bearer
+  token: "{{ _.bearerToken }}"
+metaSortKey: -1664355027623
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

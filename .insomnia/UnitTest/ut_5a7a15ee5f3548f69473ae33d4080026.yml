@@ -1,10 +1,10 @@
 _id: ut_5a7a15ee5f3548f69473ae33d4080026
 type: UnitTest
 parentId: uts_11d157d151414d6db20b6fabcc8e7e19
-modified: 1664044404637
+modified: 1664357577125
 created: 1664044398449
 requestId: req_wrk_9499a39dcd164ee5a2c3a41f1e25d8385b9b97d3
 name: Transfer to an existing bank
 code: |-
   const response1 = await insomnia.send();
-  expect(response1.status).to.equal(200);
+  expect(response1.status).to.equal(201);

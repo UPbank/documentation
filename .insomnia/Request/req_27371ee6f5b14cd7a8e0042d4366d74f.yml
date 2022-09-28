@@ -1,7 +1,7 @@
 _id: req_27371ee6f5b14cd7a8e0042d4366d74f
 type: Request
 parentId: wrk_9499a39dcd164ee5a2c3a41f1e25d838
-modified: 1664277006466
+modified: 1664359999379
 created: 1664191299625
 url: "{{base_url}}/api/transfers/servicePayments"
 name: api/transfers/servicePayments invalid payment 5.3
@@ -10,10 +10,12 @@ method: POST
 body:
   mimeType: application/json
   text: |-
-    {
-      "entity": 1234,
-      "reference": 123456789,
-      "amount": 12.34
+    { "amount": 1,
+      "note": "string",
+      "image": "string",
+      "entity": 12345,
+      "reference": 12345678
+
     }
 parameters: []
 headers:

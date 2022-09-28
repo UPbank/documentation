@@ -1,0 +1,12 @@
+_id: ut_286d214ecac5493c8fead2b0f073ecf5
+type: UnitTest
+parentId: uts_7ed33e9e9cf344fca6305b3843844e99
+modified: 1664359920286
+created: 1664353496056
+requestId: req_f43ae35458a54b84ba3209fb56dcaad2
+name: Invalid payment 5.2.2 entity
+code: |
+  const response1 = await insomnia.send();
+  expect(response1.status).to.equal(400);
+  const body = JSON.parse(response1.data);
+  expect(body.message).to.equal("400 BAD_REQUEST \"entity.must.have.5.digits\"")

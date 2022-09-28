@@ -1,0 +1,10 @@
+_id: ut_8b4a5cd53a224110ba0475c6a9b92165
+type: UnitTest
+parentId: uts_397243e9c4d548a5b54556b1ab1048f9
+modified: 1664355886324
+created: 1664354884391
+requestId: req_4bbcd9719892446bb90c574bed3e59e4
+name: Deactivate direct debit
+code: |-
+  const response1 = await insomnia.send();
+  expect(response1.status).to.equal(200);
